@@ -62,28 +62,28 @@ vlan 40
 exit
 
 ! Access Port Allocations
-interface FastEthernet0/1
+interface FastEthernet0/2
  switchport mode access
  switchport access vlan 10
  no shutdown
 
-interface FastEthernet0/2
+interface FastEthernet0/3
  switchport mode access
  switchport access vlan 20
  no shutdown
 
-interface FastEthernet0/3
+interface FastEthernet0/4
  switchport mode access
  switchport access vlan 30
  no shutdown
 
-interface range FastEthernet0/4 - 5
+interface range FastEthernet0/5 - 6
  switchport mode access
  switchport access vlan 40
  no shutdown
 
 ! 802.1Q Trunk Link to Router
-interface FastEthernet0/24
+interface FastEthernet0/1
  switchport mode trunk
  switchport trunk native vlan 99
  no shutdown
